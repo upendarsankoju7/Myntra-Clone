@@ -6,11 +6,7 @@ on:
 jobs:
   build-analyze-scan:
     name: Build
-<<<<<<< HEAD
-    runs-on: ubuntu-latest
-=======
     runs-on: self-hosted
->>>>>>> 527504d4cc146e59ac7a7a4add23f642793232d4
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -21,8 +17,5 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-<<<<<<< HEAD
       - name: NPM Install
         run: npm install # Add your specific npm install command
-=======
->>>>>>> 527504d4cc146e59ac7a7a4add23f642793232d4
