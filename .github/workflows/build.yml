@@ -42,8 +42,3 @@ jobs:
           docker push upendar07/myntra:latest
         env:
           DOCKER_CLI_ACI: 1
-
-      - name: Docker Scout Image Scan
-        run: |
-          docker-scout quickview upendar07/myntra:latest
-          docker-scout cves upendar07/myntra:latest
